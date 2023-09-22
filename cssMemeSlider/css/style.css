@@ -16,16 +16,35 @@
     box-sizing: border-box;
 }
 
-
+::after,
+::before {
+  box-sizing: border-box;
+}
 html {
     font-size: 0.625rem;
     scroll-behavior: smooth;
+    
 }
 
 body {
-    color: var(--color-basic-white);
+    
+ 
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #c8cb1d;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    
 }
-
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 .wrapper {
     max-width: 90%;
     height: 100%;
@@ -48,8 +67,66 @@ body {
 /* HEADER */
 
 /* MAIN */
+.slider {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 90rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  label:hover span {
+    background-color: #09bf15;
+    border-color: #09bf15;
+  }
+  label:active span {
+    background-color: #eba937;
+    border-color: #eba937;
+  }
 
-
+  span {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: tomato;
+    border: 0.125rem solid transparent;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main {
+    width: 100%;
+  }
+  
+  .main-wrapper {
+    max-width: 90rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .memeslider_container {
+    width: 100%;
+}
+    .pic-carousel-memeslider {
+        width: 100%;
+        margin-bottom: 2rem;
+        overflow: hidden;
+      }
+      .memeslider__list {
+        display: flex;
+        max-width: 90rem;
+        transform: translateX(0);
+        transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .memeslider__item {
+        flex-shrink: 0;
+        width: 100%;
+        border-radius: 1.5rem;
+      }
 /* FOOTER */
 .footer{
 
