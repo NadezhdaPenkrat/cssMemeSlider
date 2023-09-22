@@ -85,12 +85,24 @@ img {
     background-color: #eba937;
     border-color: #eba937;
   }
-
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
   span {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: tomato;
+    background-color: rgb(131, 216, 26);
     border: 0.125rem solid transparent;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -127,6 +139,155 @@ img {
         width: 100%;
         border-radius: 1.5rem;
       }
+
+      .memeslider__slogan {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+      }
+      .memeslider__slogan-carousel {
+        width: 100%;
+        margin-right: auto;
+        overflow: hidden;
+      }
+      
+      .memeslider__slogan__intro {
+        display: flex;
+        max-width: 100%;
+        transform: translateX(0);
+        transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .memeslider__slogan-item {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #f5f5f5;
+      }    
+   
+.memememeslider__button-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .memeslider__button-item {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+input[id="love"]:checked 
+~ .pic-carousel-memeslider 
+> .memeslider__list {
+    transform: translateX(0);
+  }
+  input[id="joy"]:checked 
+  ~ .pic-carousel-memeslider 
+  > .memeslider__list {
+    transform: translateX(-100%);
+  }
+  input[id="relax"]:checked 
+  ~ .pic-carousel-memeslider 
+  > .memeslider__list {
+    transform: translateX(-200%);
+  }
+  input[id="dream"]:checked 
+  ~ .pic-carousel-memeslider 
+  > .memeslider__list {
+    transform: translateX(-300%);
+  }
+
+  
+input[id="love"]:checked
+~ .memeslider__slogan
+> .memeslider__slogan-carousel
+> .memeslider__slogan__intro {
+transform: translateX(0);
+}
+input[id="joy"]:checked
+~ .memeslider__slogan
+> .memeslider__slogan-carousel
+> .memeslider__slogan__intro {
+transform: translateX(-100%);
+}
+input[id="relax"]:checked
+~ .memeslider__slogan
+> .memeslider__slogan-carousel
+> .memeslider__slogan__intro {
+transform: translateX(-200%);
+}
+input[id="dream"]:checked
+~ .memeslider__slogan
+> .memeslider__slogan-carousel
+> .memeslider__slogan__intro {
+transform: translateX(-300%);
+}
+
+input[id="love"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="love"]
+> span {
+background-color: transparent;
+border-color: rgb(154, 255, 71);
+}
+input[id="joy"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="joy"]
+> span {
+background-color: transparent;
+border-color: rgb(154, 255, 71);
+}
+input[id="relax"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="relax"]
+> span {
+background-color: transparent;
+border-color: rgb(154, 255, 71);
+}
+input[id="dream"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="dream"]
+> span {
+background-color: transparent;
+border-color:  rgb(154, 255, 71);
+}
+
+input[id="love"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="love"]:hover
+> span {
+border-color: #f5f5f5;
+}
+input[id="joy"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="joy"]:hover
+> span {
+border-color: #f5f5f5;
+}
+input[id="relax"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="relax"]:hover
+> span {
+border-color: #f5f5f5;
+}
+input[id="dream"]:checked
+~ .memeslider__slogan
+> .memeslider__button-list
+label[for="dream"]:hover
+> span {
+border-color: #f5f5f5;
+}
 /* FOOTER */
 .footer{
 
@@ -196,25 +357,6 @@ img {
 text-decoration: none;
 }
 
-hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
+
 
 /* MEDIA */
