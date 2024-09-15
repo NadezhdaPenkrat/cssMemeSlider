@@ -191,3 +191,103 @@ span {
   width: 2.5rem;
   height: 2.5rem;
 }
+
+input[id="idea-found"]:checked ~ .slider__pic-carousel > .slider__list {
+  transform: translateX(0);
+}
+input[id="inspired"]:checked ~ .slider__pic-carousel > .slider__list {
+  transform: translateX(-100%);
+}
+input[id="naive-lol"]:checked ~ .slider__pic-carousel > .slider__list {
+  transform: translateX(-200%);
+}
+input[id="vibe-badges"]:checked ~ .slider__pic-carousel > .slider__list {
+  transform: translateX(-300%);
+}
+
+input[id="idea-found"]:checked
+  ~ .slider__description
+  > .slider__text-carousel
+  > .slider__heading {
+  transform: translateX(0);
+}
+input[id="inspired"]:checked
+  ~ .slider__description
+  > .slider__text-carousel
+  > .slider__heading {
+  transform: translateX(-100%);
+}
+input[id="naive-lol"]:checked
+  ~ .slider__description
+  > .slider__text-carousel
+  > .slider__heading {
+  transform: translateX(-200%);
+}
+input[id="vibe-badges"]:checked
+  ~ .slider__description
+  > .slider__text-carousel
+  > .slider__heading {
+  transform: translateX(-300%);
+}
+
+input[id="idea-found"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="idea-found"]
+  > span {
+  background-color: transparent;
+  border-color: rgb(71, 255, 89);
+}
+input[id="inspired"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="inspired"]
+  > span {
+  background-color: transparent;
+  border-color: rgb(71, 255, 89);
+}
+input[id="naive-lol"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="naive-lol"]
+  > span {
+  background-color: transparent;
+  border-color: rgb(71, 255, 89);
+}
+input[id="vibe-badges"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="vibe-badges"]
+  > span {
+  background-color: transparent;
+  border-color: rgb(71, 255, 89);
+}
+
+input[id="idea-found"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="idea-found"]:hover
+  > span {
+  border-color: #f5f5f5;
+}
+input[id="inspired"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="inspired"]:hover
+  > span {
+  border-color: #f5f5f5;
+}
+input[id="naive-lol"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="naive-lol"]:hover
+  > span {
+  border-color: #f5f5f5;
+}
+input[id="vibe-badges"]:checked
+  ~ .slider__description
+  > .slider__button-list
+  label[for="vibe-badges"]:hover
+  > span {
+  border-color: #f5f5f5;
+}
