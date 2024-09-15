@@ -128,3 +128,41 @@ span {
   width: 100%;
   border-radius: 1.5rem;
 }
+
+.slider__description {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .slider__description {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.slider__text-carousel {
+  width: 100%;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.slider__heading {
+  display: flex;
+  max-width: 100%;
+  transform: translateX(0);
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider__heading-item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
