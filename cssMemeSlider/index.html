@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>CSS Meme Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./css/styles.css" >
+  </head>
+  <body>
+    <div class="slider">
+      <div class="container">
+        <div class="slider__container">
+          <input id="idea-found" type="radio" name="idea-found" checked >
+          <input id="inspired" type="radio" name="inspired" >
+          <input id="naive-lol" type="radio" name="naive-lol" >
+          <input id="vibe-badges" type="radio" name="vibe-badges" >
+          <div class="slider__pic-carousel">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img src="./assets/idea-found.jpg" alt="idea-found Turning" >
+              </li>
+              <li class="slider__item">
+                <img src="./assets/inspired.jpg" alt="inspired Turning" >
+              </li>
+              <li class="slider__item">
+                <img src="./assets/naive-lol.jpg" alt="naive-lol Turning" >
+              </li>
+              <li class="slider__item">
+                <img src="./assets/vibe-badges.jpg" alt="vibe-badges Turning" >
+              </li>
+            </ul>
+          </div>
+          <div class="slider__description">
+            <div class="slider__text-carousel">
+              <ul class="slider__heading">
+                <li class="slider__heading-item">
+                  <p>You can be idea-found</p>
+                </li>
+                <li class="slider__heading-item">
+                  <p>You can be inspired sometimes</p>
+                </li>
+                <li class="slider__heading-item">
+                  <p>Or you can be naive-lol... and it's okay</p>
+                </li>
+                <li class="slider__heading-item">
+                  <p>Be different, be yourself</p>
+                </li>
+              </ul>
+            </div>
+            <ul class="slider__button-list">
+              <li class="slider__button-item">
+                <label for="idea-found">
+                  <span></span>
+                </label>
+              </li>
+              <li class="slider__button-item">
+                <label for="inspired">
+                  <span></span>
+                </label>
+              </li>
+              <li class="slider__button-item">
+                <label for="naive-lol">
+                  <span></span>
+                </label>
+              </li>
+              <li class="slider__button-item">
+                <label for="vibe-badges">
+                  <span></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
